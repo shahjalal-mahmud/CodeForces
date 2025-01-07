@@ -3,36 +3,25 @@ using namespace std;
 int main()
 {
     int n;
-    cout << "Enter a number: ";
     cin >> n;
-    string arr[n];
+    string s;
     int x = 0;
     for (int i = 0; i < n; i++)
     {
-        cout << "Enter element: ";
-        cin >> arr[i];
-    }
-    for (int i = 0; i < n; i++)
-    {
-        if (arr[i] == "++x")
+        cin >> s;
+        if (s == "++x")
         {
             ++x;
         }
-        else if (arr[i] == "x++")
-        {
+        else if(s == "x++"){
             x++;
         }
-        else if (arr[i] == "--x")
-        {
+        else if(s == "--x"){
             --x;
-        }
-        else if (arr[i] == "x--")
-        {
+        }else{
             x--;
         }
     }
-    
-    cout << "Result: ";
-    cout << x;
+    cout<<x;
     return 0;
 }
