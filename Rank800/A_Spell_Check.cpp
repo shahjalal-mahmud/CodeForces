@@ -11,6 +11,8 @@ int main()
         cin >> n;
         string s;
         cin >> s;
+        string timur = "Timur";
+        sort(timur.begin(), timur.end());
         if (n != 5)
         {
             cout << "NO" << endl;
@@ -18,7 +20,7 @@ int main()
         else
         {
             sort(s.begin(), s.end());
-            if (s[0] == 'i' && s[1] == 'm' && s[2] == 'r' && s[3] == 'T' && s[4] == 'u')
+            if (s == timur)
             {
                 cout << "YES" << endl;
             }
